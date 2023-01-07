@@ -20,3 +20,9 @@
 화면에 표시되는 시간은 계속 변화하기 때문에 상태가 있는 StatefulWidget으로 구성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211133203-5ea38b67-57e4-454a-880d-9be4dce7ec9e.png)
+
+#### 화면 하단 AppBar 생성
+```
+높이 50의 하단 AppBar를 생성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211133368-0566cc82-58da-4601-b662-3ca8b1b72b10.png)
