@@ -42,6 +42,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
         }),
         child:Icon(Icons.play_arrow),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
