@@ -30,7 +30,12 @@ class _StopWatchPageState extends State<StopWatchPage> {
     return Scaffold(
       appBar:AppBar(
         title:Text('StopWatch'),
-      )
+      ),
+      bottomNavigationBar: BottomAppBar( // 하단 AppBar 생성
+        child:Container(
+          height:50.0,
+        ),
+      ),
     );
   }
 }
