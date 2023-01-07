@@ -36,7 +36,17 @@ class _StopWatchPageState extends State<StopWatchPage> {
           height:50.0,
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => setState(() {
+          _clickButton();
+        }),
+        child:Icon(Icons.play_arrow),
+      ),
     );
   }
 }
 
+// 시작 또는 일시정지 버튼 클릭
+void _clickButton() {
+
+}
