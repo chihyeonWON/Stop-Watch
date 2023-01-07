@@ -33,3 +33,9 @@
 클릭했을 때 작동하는 이벤트 메서드는 나중에 작성합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211133428-498bc578-b04b-4e16-af8f-e91e71e62bdc.png)
+
+#### 버튼의 위치를 가운데로 설정
+```
+시작 또는 일시정지 클릭 버튼을 floatingActionButtonLocation 프로퍼티를 사용해서 위젯의 위치를 가운데로 지정합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211133524-638a18b8-d852-4a23-ac75-7353742c1f7b.png)
