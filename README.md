@@ -26,3 +26,10 @@
 높이 50의 하단 AppBar를 생성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211133368-0566cc82-58da-4601-b662-3ca8b1b72b10.png)
+
+#### 시작 또는 일시정지 클릭 버튼 생성
+```
+시작 또는 일시정지 클릭 버튼을 floatingActionButton을 생성하였습니다.
+클릭했을 때 작동하는 이벤트 메서드는 나중에 작성합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211133428-498bc578-b04b-4e16-af8f-e91e71e62bdc.png)
