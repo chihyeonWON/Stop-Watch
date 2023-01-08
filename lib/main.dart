@@ -78,7 +78,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
         onPressed: () => setState(() {
           _clickButton();
         }),
-        child:Icon(Icons.play_arrow),
+        child:_isRunning ? Icon(Icons.pause) : Icon(Icons.play_arrow),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
