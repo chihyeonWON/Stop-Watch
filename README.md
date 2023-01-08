@@ -53,3 +53,8 @@
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211177798-c3d82304-ded3-4c46-8581-234302ffdf0e.png)
 
+#### 초기화 버튼 생성
+```
+스톱워치의 시간을 0초 00 으로 초기화하는 버튼을 왼쪽 아래에 생성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211177935-c1991726-fc76-4649-aa9e-42c36286dbb8.png)
