@@ -46,3 +46,10 @@
 초 단위의 시간과 1/100 초 단위의 시간을 표시합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211177707-49129dda-329d-4218-b1d9-0519d693f3c1.png)
+
+#### 랩타임을 표시하는 영역 생성
+```
+시간 영역 바로 밑에 랩타임을 표시하는 영역을 생성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211177798-c3d82304-ded3-4c46-8581-234302ffdf0e.png)
+
