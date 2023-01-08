@@ -67,10 +67,26 @@ Widget _buildBody() {
                   ),
                     Text('00'), // 1/100초
                 ],
-              )
-            ]
-          )
-        ]
+              ),
+              Container( // 랩타임을 표시하는 영역
+                width:100,
+                height:200,
+                child:ListView(
+                  children:<Widget>[Text('랩타임 표시')],
+                ),
+                 )
+            ],
+          ),
+          Positioned(
+            left:10,
+            bottom:10,
+            child:FloatingActionButton( // 왼쪽 아래에 위치한 초기화 버튼)
+              backgroundColor: Colors.deepOrange,
+              onPressed:(){},
+              child:Icon(Icons.rotate_left),
+            ),
+          ),
+        ],
       )
     )
   );
