@@ -82,3 +82,11 @@ _isRunning이 일시정지 즉 false일 때 타이머를 취소시키면서 play
 큰 숫자는 경과한 시간을 1/100초 단위의 시간을 100으로 다시 나눈 몫을 나타내고 작은 글씨는 1/100초 단위의 시간을 나타냅니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211179171-36a657ca-cc08-468f-b8f3-61f505cdc993.png)
+
+#### 타이머 초기화
+```
+타이머를 취소시키고, 랩타임과 _isRunning의 상태를 초기화하는 _reset 메서드를 작성한 후 
+초기화 버튼의 onPressed 프로퍼티에 적용하였습니다.
+초기화 버튼을 누르게 되면 타이머가 즉시 종료되며 시간은 0으로 초기화되며 동작 아이콘으로 변경됩니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211179320-976c7280-a676-434c-8653-e3e1e5d3ef81.png)
