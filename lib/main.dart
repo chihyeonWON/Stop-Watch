@@ -38,6 +38,31 @@ class _StopWatchPageState extends State<StopWatchPage> {
     super.dispose();
   }
 
+  // 시작 또는 일시정지 버튼 클릭
+  void _clickButton() {
+    _isRunning = !_isRunning; // 상태 반전
+
+    if(_isRunning) {
+      _start();
+    } else {
+      _pause();
+    }
+  }
+
+  // 타이머 시작 1/100초에 한 번씩 time 변수를 1증가
+  void _start() {
+    _timer = Timer.periodic(Duration(milliseconds:10), (timer) {
+      setState((){
+        _time++;
+      });
+    });
+  }
+
+  // 타이머 취소
+  void _pause() {
+    _timer?.cancel();
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
@@ -112,7 +137,3 @@ Widget _buildBody() {
   );
 }
 
-// 시작 또는 일시정지 버튼 클릭
-void _clickButton() {
-
-}
