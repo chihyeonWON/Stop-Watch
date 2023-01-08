@@ -90,3 +90,10 @@ _isRunning이 일시정지 즉 false일 때 타이머를 취소시키면서 play
 초기화 버튼을 누르게 되면 타이머가 즉시 종료되며 시간은 0으로 초기화되며 동작 아이콘으로 변경됩니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211179320-976c7280-a676-434c-8653-e3e1e5d3ef81.png)
+
+#### 랩타임 기록
+```
+랩타임 버튼을 누르면 실행되는 _recordLapTime() 메서드를 작성합니다.
+랩타임 버튼을 눌렀을 때 현재의 초와 1/100 단위의 초를 넘겨받아서 ~등 시간의 형태로 나타나도록 설정합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211179523-fb6daebd-aae6-4cfd-82b9-5793670841a3.png)
