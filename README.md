@@ -74,3 +74,11 @@ _isRunning이 동작 중 즉 true일 때 1/100초에 한 번씩 time 변수를 1
 _isRunning이 일시정지 즉 false일 때 타이머를 취소시키면서 play_arrow 아이콘이 나타나도록 설정하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211178904-0fc279dd-7117-4111-aa99-1d37c2166078.png)
+
+#### 시간 표시
+```
+동작 버튼을 눌렀을 때 작성한 _start() 메서드가 작동하여 시간이 바뀌도록 수정하였습니다.
+일시정지 버튼을 눌렀을 때 작성한 _pause() 메서드가 작동하여 타이머가 멈추도록 수정하였습니다.
+큰 숫자는 경과한 시간을 1/100초 단위의 시간을 100으로 다시 나눈 몫을 나타내고 작은 글씨는 1/100초 단위의 시간을 나타냅니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211179171-36a657ca-cc08-468f-b8f3-61f505cdc993.png)
