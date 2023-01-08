@@ -73,6 +73,11 @@ class _StopWatchPageState extends State<StopWatchPage> {
     });
   }
 
+  // 랩타임 기록
+  void _recordLapTime(String time) {
+    _lapTimes.insert(0, '${_lapTimes.length +1}등 $time'); // ~등 시간의 형태로 꾸민 후 리스트에 추가
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
@@ -120,7 +125,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
                       width:100,
                       height:200,
                       child:ListView(
-                        children:<Widget>[Text('랩타임 표시')],
+                        children:_lapTimes.map((time) => Text(time, style:TextStyle(fontSize:20.0,))).toList(),
                       ),
                     )
                   ],
@@ -138,7 +143,11 @@ class _StopWatchPageState extends State<StopWatchPage> {
                     right:10, // 오른 10의 여백
                     bottom:10, // 아래 10의 여백
                     child:ElevatedButton( // 오른쪽 아래에 위치한 랩타임 버튼
-                      onPressed:(){},
+                      onPressed:(){
+                        setState((){
+                          _recordLapTime('$sec.$hundredth');
+                        });
+                      },
                       child:Text('랩타임'),
                     )
                 )
