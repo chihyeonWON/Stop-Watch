@@ -63,6 +63,16 @@ class _StopWatchPageState extends State<StopWatchPage> {
     _timer?.cancel();
   }
 
+  // 초기화
+  void _reset() {
+    setState((){
+      _isRunning = false;
+      _timer?.cancel();
+      _lapTimes.clear();
+      _time = 0;
+    });
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
@@ -83,57 +93,61 @@ class _StopWatchPageState extends State<StopWatchPage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
+  //내용 부분
+  Widget _buildBody() {
+    var sec = _time ~/ 100; //초
+    var hundredth = '${_time % 100}'.padLeft(2, '0'); // 1/100초
+
+    return Center(
+        child:Padding(
+            padding:const EdgeInsets.only(top:30),
+            child:Stack(
+              children:<Widget>[
+                Column(
+                  children:<Widget>[
+                    Row( // 시간을 표시하는 영역
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children:<Widget>[
+                        Text(
+                          '$sec',
+                          style: TextStyle(fontSize:50.0),
+                        ),
+                        Text('$hundredth'), // 1/100초
+                      ],
+                    ),
+                    Container( // 랩타임을 표시하는 영역
+                      width:100,
+                      height:200,
+                      child:ListView(
+                        children:<Widget>[Text('랩타임 표시')],
+                      ),
+                    )
+                  ],
+                ),
+                Positioned(
+                  left:10, // 왼쪽 10의 여백
+                  bottom:10, // 아래 10의 여백
+                  child:FloatingActionButton( // 왼쪽 아래에 위치한 초기화 버튼)
+                    backgroundColor: Colors.deepOrange,
+                    onPressed:_reset,
+                    child:Icon(Icons.rotate_left),
+                  ),
+                ),
+                Positioned(
+                    right:10, // 오른 10의 여백
+                    bottom:10, // 아래 10의 여백
+                    child:ElevatedButton( // 오른쪽 아래에 위치한 랩타임 버튼
+                      onPressed:(){},
+                      child:Text('랩타임'),
+                    )
+                )
+              ],
+            )
+        )
+    );
+  }
 }
 
-//내용 부분
-Widget _buildBody() {
-  return Center(
-    child:Padding(
-      padding:const EdgeInsets.only(top:30),
-      child:Stack(
-        children:<Widget>[
-          Column(
-            children:<Widget>[
-              Row( // 시간을 표시하는 영역
-                mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children:<Widget>[
-                  Text(
-                    '0',
-                    style: TextStyle(fontSize:50.0),
-                  ),
-                    Text('00'), // 1/100초
-                ],
-              ),
-              Container( // 랩타임을 표시하는 영역
-                width:100,
-                height:200,
-                child:ListView(
-                  children:<Widget>[Text('랩타임 표시')],
-                ),
-                 )
-            ],
-          ),
-          Positioned(
-            left:10, // 왼쪽 10의 여백
-            bottom:10, // 아래 10의 여백
-            child:FloatingActionButton( // 왼쪽 아래에 위치한 초기화 버튼)
-              backgroundColor: Colors.deepOrange,
-              onPressed:(){},
-              child:Icon(Icons.rotate_left),
-            ),
-          ),
-          Positioned(
-            right:10, // 오른 10의 여백
-            bottom:10, // 아래 10의 여백
-            child:ElevatedButton( // 오른쪽 아래에 위치한 랩타임 버튼
-              onPressed:(){},
-              child:Text('랩타임'),
-            )
-          )
-        ],
-      )
-    )
-  );
-}
+
 
