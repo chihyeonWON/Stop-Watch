@@ -39,3 +39,10 @@
 시작 또는 일시정지 클릭 버튼을 floatingActionButtonLocation 프로퍼티를 사용해서 위젯의 위치를 가운데로 지정합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211133524-638a18b8-d852-4a23-ac75-7353742c1f7b.png)
+
+#### 스톱워치의 시간 영역 생성
+```
+스톱워치의 시간이 들어가는 영역을 생성하였습니다.
+초 단위의 시간과 1/100 초 단위의 시간을 표시합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211177707-49129dda-329d-4218-b1d9-0519d693f3c1.png)
