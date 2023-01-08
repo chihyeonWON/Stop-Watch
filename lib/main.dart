@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:async'; // Timer 클래스를 포함하는 라이브러리
 
 void main() {
   runApp(MyApp());
