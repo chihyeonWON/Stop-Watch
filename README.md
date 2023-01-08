@@ -64,3 +64,13 @@
 눌렀을 때 랩타임을 생성하는 버튼을 오른쪽 아래에 생성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211178008-49e3fdbf-9565-4b23-9000-0b5d82813f32.png)
+
+#### 타이머 클래스의 사용과 필요한 변수, 메서드 정의
+```
+타이머 클래스를 사용하기 위해 'dark:sync' 패키지를 임포트하였습니다.
+또 시작/일시정지 버튼의 상태 변환 로직과 동작 로직을 작성하였습니다.
+불리언 타입의 _isRunning 변수의 상태에 따라 아이콘이 달라지도록 작성하였습니다.
+_isRunning이 동작 중 즉 true일 때 1/100초에 한 번씩 time 변수를 1 증가시키면서 pause 아이콘이 나타나도록 하고
+_isRunning이 일시정지 즉 false일 때 타이머를 취소시키면서 play_arrow 아이콘이 나타나도록 설정하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211178904-0fc279dd-7117-4111-aa99-1d37c2166078.png)
