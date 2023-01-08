@@ -31,6 +31,7 @@ class _StopWatchPageState extends State<StopWatchPage> {
       appBar:AppBar(
         title:Text('StopWatch'),
       ),
+      body:_buildBody(),
       bottomNavigationBar: BottomAppBar( // 하단 AppBar 생성
         child:Container(
           height:50.0,
@@ -45,6 +46,34 @@ class _StopWatchPageState extends State<StopWatchPage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
+}
+
+//내용 부분
+Widget _buildBody() {
+  return Center(
+    child:Padding(
+      padding:const EdgeInsets.only(top:30),
+      child:Stack(
+        children:<Widget>[
+          Column(
+            children:<Widget>[
+              Row( // 시간을 표시하는 영역
+                mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children:<Widget>[
+                  Text(
+                    '0',
+                    style: TextStyle(fontSize:50.0),
+                  ),
+                    Text('00'), // 1/100초
+                ],
+              )
+            ]
+          )
+        ]
+      )
+    )
+  );
 }
 
 // 시작 또는 일시정지 버튼 클릭
