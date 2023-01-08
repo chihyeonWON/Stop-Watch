@@ -58,3 +58,9 @@
 스톱워치의 시간을 0초 00 으로 초기화하는 버튼을 왼쪽 아래에 생성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211177935-c1991726-fc76-4649-aa9e-42c36286dbb8.png)
+
+#### 랩타임 버튼 생성
+```
+눌렀을 때 랩타임을 생성하는 버튼을 오른쪽 아래에 생성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211178008-49e3fdbf-9565-4b23-9000-0b5d82813f32.png)
