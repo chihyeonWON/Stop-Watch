@@ -121,6 +121,9 @@ class _StopWatchPageState extends State<StopWatchPage> {
                         Text('$hundredth', style:TextStyle(fontSize:20)), // 1/100초
                       ],
                     ),
+                    SizedBox(
+                      height:40.0,
+                    ),
                     Container( // 랩타임을 표시하는 영역
                       width:100,
                       height:200,
