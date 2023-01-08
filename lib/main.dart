@@ -78,14 +78,22 @@ Widget _buildBody() {
             ],
           ),
           Positioned(
-            left:10,
-            bottom:10,
+            left:10, // 왼쪽 10의 여백
+            bottom:10, // 아래 10의 여백
             child:FloatingActionButton( // 왼쪽 아래에 위치한 초기화 버튼)
               backgroundColor: Colors.deepOrange,
               onPressed:(){},
               child:Icon(Icons.rotate_left),
             ),
           ),
+          Positioned(
+            right:10, // 오른 10의 여백
+            bottom:10, // 아래 10의 여백
+            child:ElevatedButton( // 오른쪽 아래에 위치한 랩타임 버튼
+              onPressed:(){},
+              child:Text('랩타임'),
+            )
+          )
         ],
       )
     )
